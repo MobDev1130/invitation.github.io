@@ -1,0 +1,97 @@
+body{
+    background: url(background.jpeg) no-repeat;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 800px;
+    height: 500px;
+}
+
+.card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 450px;
+    height: 600px;
+}
+
+img{
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    height: 500px;
+    width: 800px;
+}
+
+.card .card-bg img{
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.card .content{
+    z-index: 2;
+    position: absolute;
+    top: 350px;
+    left: 450px;
+    text-align: center;
+    line-height: 20px;
+    transition: all 0.3s ease-out;
+}
+
+.card .content h1{
+    color: #169B62;
+}
+
+.card .content #welcome h2{
+    color: #FFFFFF;
+}
+
+.card .content #party h2{
+    color:red;
+    font-size: 30px;
+}
+
+.card .content h3{
+    background: linear-gradient(90deg, #169B62, #FFFFFF, #FF883E);
+    background-size: 400%;
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 5px;
+    word-spacing: 5px;
+    font-weight: 600;
+    font-family: sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: animate 10s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
+}
+
+.card .content h4{
+    color: #FF883E;
+}
+
+.card .content h5{
+    color:#00FF00;
+}
+
+.card .content #time{
+    font-size: 16px;
+    color:skyblue;
+}
+
+.card .content #location{
+    font-size: 16px;
+    color:turquoise;
+}
